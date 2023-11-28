@@ -211,6 +211,7 @@ export default function Cartografia() {
             )
             .map(ficha => (
               <Marker
+                key={`marker_${ficha.row}`}
                 longitude={parseFloat(ficha.longitude.replace(',', '.'))}
                 latitude={parseFloat(ficha.latitude.replace(',', '.'))}
                 anchor="bottom"
